@@ -697,7 +697,7 @@ Lorne - Anglesea,6270
 Portarlington,9926
 Point Lonsdale - Queenscliff,5594
 Torquay,25451
-Ocean Grove - Barwon Heads ,32036
+Ocean Grove - Barwon Heads,32036
 Alexandra,6792
 Euroa,6882
 Kilmore - Broadford,15772
@@ -758,12 +758,11 @@ Brunswick,26618
 Coburg,27051
 Alphington - Fairfield,9156
 Thornbury,19177
-Northcote - East,15131
-Northcote - West,10480
+Northcote,25611
 Ascot Vale,15179
 Flemington,9188
 Moonee Ponds,16579
-Essendon (West) - Aberfeldie,16176
+Essendon - Aberfeldie,16176
 Essendon - East,12288
 Carlton,18004
 Docklands,16456
@@ -773,35 +772,29 @@ Kensington (Vic.),11000
 Parkville,7462
 South Yarra - West,6565
 West Melbourne - Industrial,0
-Melbourne CBD - East,10655
-Melbourne CBD - North,18826
-Melbourne CBD - West,17299
+Melbourne,46780
 North Melbourne,16582
 Royal Botanic Gardens Victoria,0
-Southbank (West) - South Wharf,6814
-Southbank - East,17340
-West Melbourne - Residential,8014
+Southbank,24155
+West Melbourne,8014
 Albert Park,16161
 Elwood,14873
 Port Melbourne,16376
 St Kilda East,15989
 Port Melbourne Industrial,2228
 South Melbourne,11873
-St Kilda - Central,12241
-St Kilda - West,14264
+St Kilda,26505
 Armadale,9369
 Prahran - Windsor,19269
 Toorak,13118
-South Yarra - North,11779
-South Yarra - South,9946
+South Yarra,21725
 Abbotsford,9502
 Carlton North - Princes Hill,8150
 Collingwood,9668
 Fitzroy,10800
 Fitzroy North,12962
 Clifton Hill - Alphington,10272
-Richmond (South) - Cremorne,17840
-Richmond - North,14060
+Richmond,31900
 Ashburton (Vic.),7947
 Balwyn,16306
 Balwyn North,21306
@@ -810,10 +803,8 @@ Glen Iris - East,16880
 Hawthorn East,16100
 Kew East,6567
 Surrey Hills (West) - Canterbury,15898
-Hawthorn - North,10046
-Hawthorn - South,12269
-Kew - South,11732
-Kew - West,13179
+Hawthorn,22315
+Kew,24911
 Bulleen,11428
 Doncaster,25661
 Templestowe,17154
@@ -830,7 +821,7 @@ Surrey Hills (East) - Mont Albert,10317
 Beaumaris,14021
 Brighton (Vic.),22906
 Brighton East,16717
-Highett (West) - Cheltenham,12543
+Cheltenham - Highett (West),12543
 Hampton,18496
 Sandringham - Black Rock,17494
 Bentleigh - McKinnon,25454
@@ -841,14 +832,14 @@ Elsternwick,12111
 Hughesdale,7657
 Murrumbeena,9538
 Ormond - Glen Huntly,13409
-Bentleigh East - North,16888
-Bentleigh East - South,14111
+Bentleigh East (North),16888
+Bentleigh East (South),14111
 Aspendale Gardens - Waterways,8909
 Braeside,28
 Carrum - Patterson Lakes,12169
 Chelsea - Bonbeach,15351
 Chelsea Heights,5373
-Highett (East) - Cheltenham,24538
+Cheltenham - Highett (East),24538
 Edithvale - Aspendale,13653
 Mentone,13361
 Moorabbin - Heatherton,9213
@@ -939,7 +930,7 @@ Rowville - South,10389
 Wantirna,14211
 Wantirna South,17964
 Boronia,23835
-Ferntree Gully - North,14227
+Ferntree Gully (North),14227
 Ferntree Gully (South) - Upper Ferntree Gully,15342
 The Basin,4313
 Donvale - Park Orchards,16397
@@ -974,10 +965,8 @@ Emerald - Cockatoo,18734
 Beaconsfield - Officer,25757
 Bunyip - Garfield,10059
 Koo Wee Rup,10808
-Pakenham - North East,15783
-Pakenham - North West,8097
-Pakenham - South East,6596
-Pakenham - South West,27434
+Pakenham - North,23880
+Pakenham - South,34030
 Berwick - North,23063
 Doveton,12158
 Hallam,11571
@@ -986,35 +975,29 @@ Endeavour Hills - North,12070
 Endeavour Hills - South,13300
 Narre Warren - North East,13491
 Narre Warren - South West,14942
-Berwick - South East,18368
-Berwick - South West,11646
+Berwick - South,30014
 Cranbourne,21602
 Cranbourne South,19713
 Cranbourne West,22939
 Lynbrook - Lyndhurst,18634
 Pearcedale - Tooradin,8100
-Narre Warren South - East,13162
-Narre Warren South - West,16765
+Narre Warren South (East),13162
+Narre Warren South (West),16765
 Clyde North - North,11693
 Clyde North - South,17994
-Cranbourne East - North,24250
-Cranbourne East - South,13653
-Cranbourne North - East,13260
-Cranbourne North - West,11978
-Hampton Park - East,12831
-Hampton Park - West,13415
+Cranbourne East,37903
+Cranbourne North,25238
+Hampton Park,26246
 Clarinda - Oakleigh South,11492
 Clayton South,13933
-Dandenong North,22547
+Dandenong,32094
 Dingley Village,10553
 Noble Park North,7462
 Springvale,22616
 Springvale South,12453
 Noble Park - East,12855
 Noble Park - West,19663
-Dandenong - South,9547
-Keysborough - North,14997
-Keysborough - South,15653
+Keysborough,30650
 Ashwood - Chadstone,20057
 Glen Waverley - East,21737
 Glen Waverley - West,21521
@@ -1023,8 +1006,7 @@ Mount Waverley - South,19592
 Mulgrave,20218
 Oakleigh - Huntingdale,23537
 Wheelers Hill,20680
-Clayton (North) - Notting Hill,10699
-Clayton - Central,12890
+Clayton,23589
 Ardeer - Albion,7473
 Cairnlea,10006
 Delahey,8035
@@ -1037,7 +1019,7 @@ Sunshine North,11982
 Sunshine West,18294
 Sydenham,11596
 Taylors Lakes,16764
-Deer Park,17977
+Deer Park - Derrimut,26696
 Derrimut,8719
 Altona,13720
 Altona Meadows,18347
@@ -1065,7 +1047,7 @@ Fraser Rise - Plumpton,12982
 Hillside,16221
 Kurunjang - Toolern Vale,11825
 Melton,7905
-Melton - South,18722
+Melton South,18722
 Hoppers Crossing - North,18253
 Hoppers Crossing - South,18497
 Laverton,11879
@@ -1094,8 +1076,7 @@ Mount Martha,19975
 Point Nepean,19933
 Rosebud - McCrae,22978
 Somerville,18608
-Mornington - East,15092
-Mornington - West,10634
+Mornington,25726
 Ararat,8392
 Ararat Surrounds,3189
 Horsham,16930
@@ -1138,7 +1119,7 @@ Portland,11171
 Southern Grampians,6231
 Camperdown,3453
 Colac,12621
-Colac Surrounds,5610
+Colac Region,5610
 Corangamite - North,5347
 Corangamite - South,7140
 Otway,3972
