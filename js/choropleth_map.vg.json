@@ -1,36 +1,63 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population Density of Australian Statistical Areas Level",
-  "width": 800,
+  "title": "Population Density of Australian Statistical Areas Level 3 (SA3)",
+  "width": 500,
   "height": 400,
-  "projection": {"type": "equalEarth"},
-  "data": {
-    "url": "SA3_2016_AUST.topojson",
-    "format": {"type": "topojson", "feature": "SA3_2016_AUST"}
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [0, 0],
+    "center": [134.296875, 27]
   },
-  "transform": [
+  "layer": [
     {
-      "lookup": "properties.SA3_NAME16",
-      "from": {
-        "data": {
-          "url": "SA3_data.csv"
+      "data": {
+        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA3_2016_AUST1.topojson",
+        "format": {"type": "topojson", "feature": "SA3_2016_AUST", "parse": {"properties.AREASQKM16": "number"}}
+      },
+      "transform": [
+        {
+          "lookup": "properties.SA3_NAME16",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA3_data.csv"
+            },
+            "key": "SA3_NAME16",
+            "fields": ["Population"]
+          }
         },
-        "key": "SA3_NAME16",
-        "fields": ["Population"]
+        {"calculate": "datum.Population/datum.properties.AREASQKM16", "as": "Population Density"}
+      ],
+      "mark": {"type": "geoshape", "stroke": null},
+      "encoding": {
+        "color": {
+          "field": "Population Density",
+          "type": "quantitative",
+          "scale": 
+            { "type": "log",
+            "domain": [0.1, 1, 10, 100, 1000, 10000],
+            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+          }
+        },
+        "tooltip": [
+          {"field": "properties.SA3_NAME16", "type": "nominal", "title": "(SA3)"},
+          {"field": "Population Density", "type": "quantitative"}
+        ]
       }
     },
-    {"calculate": "datum.Population", "as": "Active Cases"}
-  ],
-  "mark": {"type": "geoshape"},
-  "encoding": {
-    "color": {
-      "field": "Active Cases",
-      "type": "quantitative",
-      "scale": {"type": "log"}
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_ocean.json",
+        "format": {"type": "topojson", "feature": "ne_10m_ocean"}
+      },
+      "mark": {"type": "geoshape", "fill": "skyblue"}
     },
-    "tooltip": [
-      {"field": "properties.SA3_NAME16", "type": "nominal", "title": "Country"},
-      {"field": "Population", "type": "quantitative"}
-    ]
-  }
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_admin_1_states_provinces.topojson",
+        "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
+      },
+      "mark": {"type": "geoshape", "stroke": "grey", "fill": null}
+    }
+  ]
+  
 }
