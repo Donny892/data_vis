@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population Density of Australian Statistical Areas Level 4 (SA4)",
-  "width": 400,
-  "height": 300,
+  "title": "Population Density of Australian Statistical Areas Level 2 (SA4)",
+  "width": 800,
+  "height": 600,
   "projection": {
     "type": "conicEqualArea",
     "parallels": [0, 0],
@@ -11,17 +11,17 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA4_2016_AUST.topojson",
-        "format": {"type": "topojson", "feature": "SA4_2016_AUST", "parse": {"properties.AREASQKM16": "number"}}
+        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_2016_AUST.topojson",
+        "format": {"type": "topojson", "feature": "SA2_2016_AUST", "parse": {"properties.AREASQKM16": "number"}}
       },
       "transform": [
         {
-          "lookup": "properties.SA4_NAME16",
+          "lookup": "properties.SA2_NAME16",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA4_data.csv"
+              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_data.csv"
             },
-            "key": "SA4_NAME16",
+            "key": "SA2_NAME16",
             "fields": ["Population"]
           }
         },
@@ -35,11 +35,11 @@
           "scale": 
             { "type": "log",
             "domain": [0.1, 1, 10, 100, 1000, 10000],
-            "range": ["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#f03b20", "#bd0026"]
+            "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
           }
         },
         "tooltip": [
-          {"field": "properties.SA4_NAME16", "type": "nominal", "title": "Statistical Area Level 4"},
+          {"field": "properties.SA2_NAME16", "type": "nominal", "title": "Statistical Area Level 2"},
           {"field": "Population Density", "type": "quantitative", "format": ".2f"}
         ]
       }

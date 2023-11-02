@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population Density of Australian Statistical Areas Level 4 (SA4)",
+  "title": "Population Density of Australian Statistical Areas Level 2 (SA2)",
   "width": 400,
   "height": 300,
   "projection": {
@@ -11,17 +11,17 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA4_2016_AUST.topojson",
-        "format": {"type": "topojson", "feature": "SA4_2016_AUST", "parse": {"properties.AREASQKM16": "number"}}
+        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_2016_MEL.topojson",
+        "format": {"type": "topojson", "feature": "SA2_2016_MEL", "parse": {"properties.AREASQKM16": "number"}}
       },
       "transform": [
         {
-          "lookup": "properties.SA4_NAME16",
+          "lookup": "properties.SA2_NAME16",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA4_data.csv"
+              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_data.csv"
             },
-            "key": "SA4_NAME16",
+            "key": "SA2_NAME16",
             "fields": ["Population"]
           }
         },
@@ -39,7 +39,7 @@
           }
         },
         "tooltip": [
-          {"field": "properties.SA4_NAME16", "type": "nominal", "title": "Statistical Area Level 4"},
+          {"field": "properties.SA2_NAME16", "type": "nominal", "title": "Statistical Area Level 2"},
           {"field": "Population Density", "type": "quantitative", "format": ".2f"}
         ]
       }
@@ -50,13 +50,6 @@
         "format": {"type": "topojson", "feature": "ne_10m_ocean"}
       },
       "mark": {"type": "geoshape", "fill": "skyblue"}
-    },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_admin_1_states_provinces.topojson",
-        "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
-      },
-      "mark": {"type": "geoshape", "stroke": "grey", "fill": null}
     }
   ]
   

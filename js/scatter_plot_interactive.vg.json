@@ -1,0 +1,151 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 300,
+  "title": "Population Density per Country",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/pop_density.csv",
+    "format": {
+      "parse": {
+        "Population_Density": "number",
+        "Surface_area": "number",
+        "Population": "number"   
+      }
+    } 
+  },
+  "params": [
+    {
+      "name": "Population_Above",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 100000000,
+        "step": 1000000,
+        "name": "Minimum Population: "
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Surface_area",
+      "type": "quantitative",
+      "title": "Land Surface Area (sq. km)",
+      "axis": {"tickCount": 6},
+      "scale": {"type": "log", "domain": [10, 30000000]}
+    },
+    "y": {
+      "field": "Population_Density",
+      "title": "Population Density (People per sq. km)",
+      "type": "quantitative",
+      "axis": {"tickCount": 5},
+      "scale": {"type": "log", "domain": [1, 100000]}
+    }
+  },
+  "layer": [
+    {
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [1000000, 10000000, 50000000, 100000000, 1000000000],
+            "range": [50, 100, 200, 300, 500, 2000]
+          },
+          "legend": {"format": ".1s"}
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "North America",
+              "South America",
+              "Europe",
+              "Africa",
+              "Asia",
+              "Oceania"
+            ],
+            "range": [
+              "#e41a1c",
+              "#377eb8",
+              "#4daf4a",
+              "#984ea3",
+              "#ffff33",
+              "#a65628"
+            ]
+          }
+        },
+        "opacity": {"value": 0.75},
+        "tooltip": [
+                    {
+            "field": "Country Name",
+            "title": "Country",
+            "type": "ordinal"
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ".4s"
+          },
+          {
+            "field": "Surface_area",
+            "type": "quantitative",
+            "format": ".4s"
+          },
+          {
+            "field": "Population_Density",
+            "type": "quantitative",
+            "format": ".0f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country Name", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+            "condition": {
+            "test": "datum['Country Name'] == 'Australia'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Country Name",
+            "type": "ordinal"
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ".4s"
+          },
+          {
+            "field": "Surface_area",
+            "title": "Surface Area (sq. km)",
+            "type": "quantitative",
+            "format": ".4s"
+          },
+          {
+            "field": "Population_Density",
+            "title": "Population Density",
+            "type": "quantitative",
+            "format": ".0f"
+          }
+        ]
+      }
+    }
+  ]
+}
