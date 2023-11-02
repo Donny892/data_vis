@@ -648,7 +648,7 @@ Delacombe,11790
 Smythes Creek,4222
 Wendouree - Miners Rest,15380
 Ballarat East - Warrenheip,9635
-Ballarat North - Invermay,14886
+Ballarat - North,14886
 Canadian - Mount Clear,12388
 Sebastopol - Redan,12953
 Bacchus Marsh Surrounds,6539
@@ -689,16 +689,15 @@ Newcomb - Moolap,15284
 Newtown (Vic.),10299
 North Geelong - Bell Park,15711
 Charlemont,11854
-Corio - Lovely Banks,18243
-Grovedale - Mount Duneed,25814
+Corio,18243
+Grovedale,25814
 Norlane,8946
 Clifton Springs,17111
 Lorne - Anglesea,6270
 Portarlington,9926
 Point Lonsdale - Queenscliff,5594
 Torquay,25451
-Barwon Heads - Armstrong Creek,12195
-Ocean Grove,19841
+Ocean Grove - Barwon Heads ,32036
 Alexandra,6792
 Euroa,6882
 Kilmore - Broadford,15772
@@ -755,10 +754,8 @@ Yarram,5587
 Brunswick East,13296
 Brunswick West,14684
 Pascoe Vale South,10413
-Brunswick - North,13254
-Brunswick - South,13364
-Coburg - East,12949
-Coburg - West,14102
+Brunswick,26618
+Coburg,27051
 Alphington - Fairfield,9156
 Thornbury,19177
 Northcote - East,15131
@@ -821,13 +818,13 @@ Bulleen,11428
 Doncaster,25661
 Templestowe,17154
 Templestowe Lower,14338
-Doncaster East - North,15778
-Doncaster East - South,15712
+Doncaster East (North),15778
+Doncaster East (South),15712
 Blackburn,22317
 Blackburn South,10943
 Box Hill,23800
 Box Hill North,18380
-Burwood (Vic.),12912
+Burwood,12912
 Burwood East,11088
 Surrey Hills (East) - Mont Albert,10317
 Beaumaris,14021
@@ -871,10 +868,8 @@ Watsonia,9248
 Kingsbury,10758
 Preston - East,21109
 Preston - West,12758
-Reservoir - North East,14946
-Reservoir - North West,9707
-Reservoir - South East,13012
-Reservoir - South West,14249
+Reservoir - East,27958
+Reservoir - West,23,956
 Eltham,23515
 Hurstbridge,3541
 Kinglake,4307
@@ -891,16 +886,13 @@ Wallan,24665
 Whittlesea,12328
 Epping - East,13160
 Epping - South,8078
-Epping (Vic.) - West,12393
-South Morang - North,12696
-South Morang - South,12402
+Epping - West,12393
+South Morang (North),12696
+South Morang (South),12402
 Wollert,28218
-Doreen - North,16702
-Doreen - South,11093
-Lalor - East,9835
-Lalor - West,13633
-Mernda - North,11649
-Mernda - South,12549
+Doreen,27795
+Lalor,23468
+Mernda,24,198
 Airport West,8291
 Essendon Airport,14
 Keilor,8537
@@ -916,8 +908,7 @@ Coburg North,8607
 Fawkner,14179
 Gowanbrae,3133
 Hadfield,6373
-Glenroy - East,14855
-Glenroy - West,9012
+Glenroy,23567
 Oak Park,8100
 Pascoe Vale,17461
 Sunbury,13838
@@ -937,7 +928,7 @@ Craigieburn - South,22567
 Mickleham - Yuroke,28541
 Craigieburn - North West,10365
 Craigieburn - West,13629
-Roxburgh Park (South) - Somerton,9501
+Roxburgh Park - Somerton,9501
 Roxburgh Park - North,14951
 Bayswater,12699
 Knoxfield - Scoresby,16699
@@ -1021,7 +1012,6 @@ Springvale,22616
 Springvale South,12453
 Noble Park - East,12855
 Noble Park - West,19663
-Dandenong - North,21358
 Dandenong - South,9547
 Keysborough - North,14997
 Keysborough - South,15653
@@ -1075,7 +1065,7 @@ Fraser Rise - Plumpton,12982
 Hillside,16221
 Kurunjang - Toolern Vale,11825
 Melton,7905
-Melton South - Weir Views,18722
+Melton - South,18722
 Hoppers Crossing - North,18253
 Hoppers Crossing - South,18497
 Laverton,11879
@@ -1085,17 +1075,10 @@ Point Cook - South,19657
 Werribee - East,18804
 Werribee - West,25516
 Manor Lakes - Quandong,11425
-Point Cook - North East,14304
-Point Cook - North West,9745
-Tarneit (West) - Mount Cottrell,13080
-Tarneit - Central,28697
-Tarneit - North,9419
-Tarneit - South,11401
-Truganina - North,11587
-Truganina - South East,10020
-Truganina - South West,19512
-Wyndham Vale - North,10713
-Wyndham Vale - South,13717
+Point Cook - North,24049
+Tarneit,62597
+Truganina,41119
+Wyndham Vale,24430
 Carrum Downs,22390
 Frankston,23813
 Frankston North,19596
