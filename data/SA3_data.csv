@@ -1,0 +1,341 @@
+﻿SA3_NAME16,Population
+Queanbeyan,65765
+Snowy Mountains,20866
+South Coast,76987
+Goulburn - Mulwaree,38786
+Young - Yass,38239
+Gosford,178871
+Wyong,170302
+Bathurst,49700
+Lachlan Valley,54656
+Lithgow - Mudgee,47917
+Orange,61859
+Clarence Valley,54221
+Coffs Harbour,93428
+Bourke - Cobar - Coonamble,22070
+Broken Hill and Far West,19864
+Dubbo,75188
+Lower Hunter,100857
+Maitland,90379
+Port Stephens,77510
+Upper Hunter,30831
+Dapto - Port Kembla,80673
+Illawarra Catchment Reserve,5
+Kiama - Shellharbour,101196
+Wollongong,135787
+Great Lakes,33359
+Kempsey - Nambucca,51852
+Lord Howe Island,450
+Port Macquarie,88285
+Taree - Gloucester,57952
+Albury,67741
+Lower Murray,13121
+Upper Murray exc. Albury,43699
+Armidale,37778
+Inverell - Tenterfield,38961
+Moree - Narrabri,24860
+Tamworth - Gunnedah,86324
+Lake Macquarie - East,127324
+Lake Macquarie - West,86926
+Newcastle,182068
+Richmond Valley - Coastal,88796
+Richmond Valley - Hinterland,71995
+Tweed Valley,97969
+Griffith - Murrumbidgee (West),49607
+Tumut - Tumbarumba,14946
+Wagga Wagga,100029
+Shoalhaven,109369
+Southern Highlands,52800
+Baulkham Hills,155350
+Dural - Wisemans Ferry,28008
+Hawkesbury,25130
+Rouse Hill - McGraths Hill,62986
+Blacktown,143610
+Blacktown - North,155284
+Mount Druitt,116232
+Botany,60879
+Marrickville - Sydenham - Petersham,54902
+Sydney Inner City,224331
+Eastern Suburbs - North,127889
+Eastern Suburbs - South,135677
+Bankstown,187173
+Canterbury,141094
+Hurstville,132318
+Kogarah - Rockdale,147006
+Canada Bay,86717
+Leichhardt,56265
+Strathfield - Burwood - Ashfield,163069
+Chatswood - Lane Cove,118083
+Hornsby,87885
+Ku-ring-gai,124468
+North Sydney - Mosman,94851
+Manly,43324
+Pittwater,63217
+Warringah,156757
+Camden,74972
+Campbelltown (NSW),181874
+Wollondilly,47309
+Blue Mountains,77768
+Blue Mountains - South,7
+Penrith,162635
+Richmond - Windsor,38352
+St Marys,57364
+Auburn,105437
+Carlingford,74969
+Merrylands - Guildford,165191
+Parramatta,153050
+Pennant Hills - Epping,55357
+Ryde - Hunters Hill,149588
+Bringelly - Green Valley,152866
+Fairfield,193421
+Liverpool,139608
+Cronulla - Miranda - Caringbah,119108
+Sutherland - Menai - Heathcote,112182
+Ballarat,118420
+Creswick - Daylesford - Ballan,30883
+Maryborough - Pyrenees,26778
+Bendigo,103818
+Heathcote - Castlemaine - Kyneton,52913
+Loddon - Elmore,12292
+Barwon - West,22870
+Geelong,215242
+Surf Coast - Bellarine Peninsula,96388
+Upper Goulburn Valley,60416
+Wangaratta - Benalla,48494
+Wodonga - Alpine,76894
+Baw Baw,59386
+Gippsland - East,49044
+Gippsland - South West,72665
+Latrobe Valley,77521
+Wellington,45677
+Brunswick - Coburg,92062
+Darebin - South,53944
+Essendon,69410
+Melbourne City,159979
+Port Phillip,104005
+Stonnington - West,63481
+Yarra,93254
+Boroondara,169500
+Manningham - West,100071
+Whitehorse - West,109757
+Bayside,102177
+Glen Eira,159351
+Kingston,124027
+Stonnington - East,42937
+Banyule,127348
+Darebin - North,96539
+Nillumbik - Kinglake,67348
+Whittlesea - Wallan,261631
+Keilor,62164
+Macedon Ranges,33651
+Moreland - North,81720
+Sunbury,46293
+Tullamarine - Broadmeadows,212527
+Knox,159507
+Manningham - East,26483
+Maroondah,115222
+Whitehorse - East,63485
+Yarra Ranges,156566
+Cardinia,123268
+Casey - North,138842
+Casey - South,239989
+Dandenong,195129
+Monash,187220
+Brimbank,184722
+Hobsons Bay,87108
+Maribyrnong,87526
+Melton - Bacchus Marsh,212934
+Wyndham,313820
+Frankston,141078
+Mornington Peninsula,169663
+Grampians,59769
+Mildura,57216
+Murray River - Swan Hill,37874
+Campaspe,38703
+Moira,30571
+Shepparton,68733
+Glenelg - Southern Grampians,36489
+Colac - Corangamite,38143
+Warrnambool,53027
+Capalaba,74713
+Cleveland - Stradbroke,96704
+Wynnum - Manly,74590
+Bald Hills - Everton Park,47708
+Chermside,76165
+Nundah,44460
+Sandgate,62463
+Carindale,55648
+Holland Park - Yeronga,81936
+Mt Gravatt,81998
+Nathan,40835
+Rocklea - Acacia Ridge,71653
+Sunnybank,51382
+Centenary,33282
+Kenmore - Brookfield - Moggill,48576
+Sherwood - Indooroopilly,56034
+The Gap - Enoggera,55434
+Brisbane Inner,93635
+Brisbane Inner - East,45741
+Brisbane Inner - North,104070
+Brisbane Inner - West,62071
+Cairns - North,59906
+Cairns - South,108327
+Innisfail - Cassowary Coast,35961
+Port Douglas - Daintree,12569
+Tablelands (East) - Kuranda,43886
+Darling Downs (West) - Maranoa,44963
+Darling Downs - East,43702
+Granite Belt,42347
+Central Highlands (Qld),29589
+Rockhampton,124509
+Biloela,14779
+Gladstone,65302
+Broadbeach - Burleigh,68452
+Coolangatta,58825
+Gold Coast - North,70874
+Gold Coast Hinterland,20644
+Mudgeeraba - Tallebudgera,36926
+Nerang,71171
+Ormeau - Oxenford,167757
+Robina,55253
+Southport,66148
+Surfers Paradise,47166
+Forest Lake - Oxley,81006
+Ipswich Hinterland,70042
+Ipswich Inner,121496
+Springfield - Redbank,112399
+Beaudesert,15237
+Beenleigh,48648
+Browns Plains,100194
+Jimboomba,67114
+Loganlea - Carbrook,66567
+Springwood - Kingston,80534
+Bowen Basin - North,37016
+Mackay,124963
+Whitsunday,24236
+Bribie - Beachmere,38483
+Caboolture,84582
+Caboolture Hinterland,15536
+Narangba - Burpengary,72334
+Redcliffe,65627
+The Hills District,92325
+North Lakes,93051
+Strathpine,41068
+Far North,33154
+Outback - North,31104
+Outback - South,17433
+Buderim,60678
+Caloundra,100144
+Maroochy,65410
+Noosa,47603
+Sunshine Coast Hinterland,62342
+Nambour,52018
+Noosa Hinterland,25023
+Toowoomba,167199
+Charters Towers - Ayr - Ingham,42088
+Townsville,198188
+Bundaberg,96528
+Burnett,50790
+Gympie - Cooloola,55015
+Hervey Bay,66032
+Maryborough,49135
+Adelaide City,26141
+Adelaide Hills,82134
+Burnside,46694
+Campbelltown (SA),56390
+Norwood - Payneham - St Peters,38005
+Prospect - Walkerville,30926
+Unley,39082
+Gawler - Two Wells,39495
+Playford,104161
+Port Adelaide - East,79031
+Salisbury,146635
+Tea Tree Gully,98039
+Holdfast Bay,36198
+Marion,98246
+Mitcham,67031
+Onkaparinga,179882
+Charles Sturt,121441
+Port Adelaide - West,62207
+West Torrens,66492
+Barossa,39272
+Lower North,23205
+Mid North,27713
+Yorke Peninsula,27582
+Eyre Peninsula and South West,58966
+Outback - North and East,26590
+Fleurieu - Kangaroo Island,57560
+Limestone Coast,68777
+Murray and Mallee,73305
+Augusta - Margaret River - Busselton,60692
+Bunbury,112578
+Manjimup,24867
+Mandurah,113921
+Cottesloe - Claremont,74693
+Perth City,116127
+Bayswater - Bassendean,87991
+Mundaring,45601
+Swan,158639
+Joondalup,166314
+Stirling,217180
+Wanneroo,220334
+Armadale,100768
+Belmont - Victoria Park,79066
+Canning,102995
+Gosnells,132915
+Kalamunda,61256
+Serpentine - Jarrahdale,34833
+South Perth,45180
+Cockburn,122853
+Fremantle,41964
+Kwinana,49500
+Melville,109927
+Rockingham,143653
+Albany,64408
+Wheat Belt - North,58397
+Wheat Belt - South,19926
+Kimberley,38925
+East Pilbara,27319
+West Pilbara,31621
+Esperance,16700
+Gascoyne,10099
+Goldfields,40259
+Mid West,57647
+Brighton,20304
+Hobart - North East,60650
+Hobart - North West,58775
+Hobart - South and West,37388
+Hobart Inner,56074
+Sorell - Dodges Ferry,19262
+Launceston,89706
+Meander Valley - West Tamar,25011
+North East,40816
+Central Highlands (Tas.),12838
+Huon - Bruny Island,22778
+South East Coast,7848
+Burnie - Ulverstone,51369
+Devonport,49868
+West Coast,18326
+Darwin City,28403
+Darwin Suburbs,57762
+Litchfield,22642
+Palmerston,40320
+Alice Springs,40978
+Barkly,6025
+Daly - Tiwi - West Arnhem,18128
+East Arnhem,14602
+Katherine,21359
+Belconnen,105987
+Canberra East,1969
+Gungahlin,88413
+North Canberra,62556
+South Canberra,32174
+Tuggeranong,88856
+Weston Creek,24440
+Woden Valley,39192
+Molonglo,12633
+Uriarra - Namadgi,624
+Christmas Island,1787
+Cocos (Keeling) Islands,614
+Jervis Bay,311
+Norfolk Island,2213
