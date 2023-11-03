@@ -20,11 +20,6 @@
       "bind": {"input": "range", "min": 0, "max": 10000, "step": 10}
     }
   ],
-  "selection": {
-    "continent_selection": {
-      "type": "multi", "fields": ["Continent"], "bind": "legend"
-    }
-  },
   "transform":[
     {"filter": "datum.Population_Density > Population_Density_Above"}
   ],
