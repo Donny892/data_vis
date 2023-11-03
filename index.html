@@ -28,93 +28,127 @@
 
   <div class="page">
 
-    <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>The Sparesely Populated Landscape of Australia</h1>
-        <p>Exploring the vast contrasts in the population distrbution of Australia</p>
+        <h3>Exploring the vast contrasts in the population distrbution of Australia</h3>
       </div>
-    </div>
-    <!-- end pure grid group -->
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h2>Two Columns Layout</h2>
-          <p></p>
-        </div>
-      </div>
-      <div class="pure-u-1-2">
+      <div class="pure-u-1-1">
         <div id="vis1" class="vis-container"></div>
       </div>
+      <div class="pure-u-1-1">
+        <p>Australia is home to over 25 million people, making it 55th most populous country on Earth. It is also a very 
+          large country, being home to some 7.6 milllion square kilometers of land. This inherently makes Australia one of 
+          the least densely populated countries in the world, with just 3 people per square kilometer.
+        </p>
+        <p>You can use your cursor to find out more about the graphics in this visualisation</p>
     </div>
-    <!-- end pure grid group -->
 
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-3">
-        <div class="description description-left">
-          <h2>Three Equal Columns</h2>
-          <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat
-            sed. Egestas purus viverra accumsan in nisl. Egestas purus viverra accumsan in nisl.</p>
-        </div>
-      </div>
-      <div class="pure-u-1-3">
-        <div id="vis4" class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-3" style="width: 31.5%;">
-        <div id="vis3" class="vis-container" style="margin-left: 15px;"></div>
-      </div>
-
-    </div>
-    <!-- end pure grid group -->
-
-    <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-2-3">
         <div id="vis2" class="vis-container"></div>
       </div>
       <div class="pure-u-1-3">
-        <div class="description description-right">
-          <h2>First and Second Columns Combined</h2>
-          <p>The first and second columns are combined. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien
-            faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+        <div class="description description-left">
+          <h2>Concentrated by the Coast</h2>
+          <p>The image on the left depicts the concentration of the Auastralian population around the coastal areas of the 
+            country, particularly in the East. The small yellow marks indicate the urban areas which is home to 86.1% of the Australian
+            population!</p>
+            <p>The red lines are the major highways in Australia, showing that there are vast expanses of the interior of the continent
+            that have such small population that it doesn't even require road infrastruscture.
+          </p>
         </div>
       </div>
-
     </div>
-    <!-- end pure grid group -->
+
+    <div class="pure-g">
+      <div class="pure-u-1-4">
+        <div class="description description-left">
+          <h2>Zooming In</h2>
+          <p>Zooming in on the state capitals, the population density can multiple orders of magnitude higher 
+            further inland. But even when zooming in, it can be observed that the population density drops off significantly
+            the further you get from the city centre.
+          </p>
+          <p>It is interesting to see that irrespective of the total population of each city, the population density 
+            can be found to be much higher than the sourrounding regions.
+          </p>
+          <p>You can use the dropdown box below to choose your view of other state capital cities of Australia.</p>
+        </div>
+      </div>
+      <div class="pure-u-3-4">
+        <div id="vis3" class="vis-container"></div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-3-4">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-4">
+        <div class="description description-right">
+          <h2>Urban Sprawl</h2>
+          <p>Zooming in further on Melbourne and showing the data by each suburb, it can be seen apart from a dense CBD,
+            there is a consistent level of population density thoroughout the metropolitan areas before falling of on
+            the urban-fringe.</p>
+            <p>
+              This can be attributed to many Australian's choosing to live in freestanding houses, with personal back yards.
+              This causes the cities in Australia to be largely suburban, with the urban boundary far from the central business
+              district.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-4">
+        <div class="description description-left">
+          <h2>How does Australia compare to Other Countries?</h2>
+          <p>Australia no only has one of the largest land masses out of any country, it also has one of the lowest
+            population densities despite all of that area.
+          </p>
+          <p>The chart on the right shows a clear trend that generally, with more land surface area, countries will have 
+            a larger population.
+          </p>
+          <p>You can use the slider to see how Australia compares to other nations around the world.</p>
+        </div>
+      </div>
+      <div class="pure-u-3-4">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+    </div>
+
 
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
-        <p>This visualisation is created by <a href="https://fit3179.github.io/Vega-Lite/" target="_blank">FIT3179
-            Teaching Team</a>. The datasource is <a href="#" target=" _blank">some data repository online</href>.</p>
+        <p>This Visualisation was created by Robert Anderson. It may be distributed with acknowledgements. The datasources are: </p> 
+        <p\><a href="https://www.abs.gov.au/statistics/people/population/regional-population/2021-22#data-downloads" target="https://www.abs.gov.au/statistics/people/population/regional-population/2021-22#data-downloads">Australian Bureau of Statistics - Regional Population</href>.</p>
+        <p><a href="https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202016?OpenDocument" target="https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/1270.0.55.001July%202016?OpenDocument">Australian Bureau of Statistics - Australian Statistical Geography Standard</href></p>
+        <p><a href="https://www.naturalearthdata.com/downloads/" target="https://www.naturalearthdata.com/downloads/">Natural Earth Data</href></p>
       </div>
     </div>
-
-
-  </div> <!-- end page -->
+  </div> 
 
   <script type="text/javascript">
-    var specVis2 = "./js/scatter_plot_interactive.vg.json";
     var specVis1 = "./js/SA4_map.vg.json";
-
+    var specVis2 = "./js/urban_roads.vg.json";
+    var specVis3 = "./js/SA2_map.vg.json";
+    var specVis4 = "./js/melbourne_map.vg.json";
+    var specVis5 = "./js/scatter_plot_interactive.vg.json";
+    
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
     vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#vis3', specVis1, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    vegaEmbed('#vis4', specVis2, { "actions": false }).then(function (result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
     }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
   </script>
 </body>
 
