@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population Density of Australian Statistical Areas Level 4 (SA4)",
-  "width": 400,
-  "height": 300,
+  "title": "Population Density of Australia's Regions",
+  "width": "container",
+  "height": 500,
   "projection": {
     "type": "conicEqualArea",
     "parallels": [0, 0],
@@ -31,16 +31,17 @@
       "encoding": {
         "color": {
           "field": "Population Density",
+          "title": "People per sq. km",
           "type": "quantitative",
           "scale": 
             { "type": "log",
-            "domain": [0.1, 1, 10, 100, 1000, 10000],
+            "domain": [0.01, 0.1, 1, 10, 100, 1000, 10000],
             "range": ["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#f03b20", "#bd0026"]
           }
         },
         "tooltip": [
-          {"field": "properties.SA4_NAME16", "type": "nominal", "title": "Statistical Area Level 4"},
-          {"field": "Population Density", "type": "quantitative", "format": ".2f"}
+          {"field": "properties.SA4_NAME16", "type": "nominal", "title": "Region"},
+          {"field": "Population Density", "type": "quantitative","title": "People per sq. km", "format": ".2f"}
         ]
       }
     },

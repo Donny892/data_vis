@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Urban Areas and Major Highways of Australia",
+    "width": "container",
+    "height": 350,
+    "projection": {
+      "type": "conicEqualArea",
+      "parallels": [0, 0],
+      "center": [134.296875, 27]
+    },
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_ocean.json",
+          "format": {"type": "topojson", "feature": "ne_10m_ocean"}
+        },
+        "mark": {"type": "geoshape", "fill": "skyblue"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_admin_1_states_provinces.topojson",
+          "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
+        },
+        "mark": {"type": "geoshape", "stroke": "black", "fill": "rosybrown"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_roads.topojson",
+          "format": {"type": "topojson", "feature": "ne_10m_roads"}
+        },
+        "mark": {"type": "geoshape", "stroke": "firebrick", "fill": null}
+      },
+        {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_urban_areas.topojson",
+          "format": {"type": "topojson", "feature": "ne_10m_urban_areas"}
+        },
+        "mark": {"type": "geoshape", "fill": "yellow"}
+      }
+    ]
+    
+  }

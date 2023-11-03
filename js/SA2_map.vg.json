@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Population Density of Australian Capital Cities",
+  "width": "container",
+  "height": 500,
+  "params": [
+    {
+      "name": "center_to",
+      "value": [145, -37.95],
+      "bind": {
+        "input": "select",
+        "options": [
+          [145, -37.95],
+          [151.12, -33.52],
+          [153.1, -27.28],
+          [115.51,-31.75],
+          [138.35,-34.55]
+        ],
+        "labels": ["Melbourne", "Sydney", "Brisbane", "Perth", "Adelaide"],
+        "name": "Capital City:  "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equirectangular",
+    "parallels": [0, 0],
+    "center": {"expr": "center_to"},
+    "scale": 10000
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA3_2016_AUST.topojson",
+        "format": {"type": "topojson", "feature": "SA3_2016_AUST", "parse": {"properties.AREASQKM16": "number"}}
+      },
+      "transform": [
+        {
+          "lookup": "properties.SA3_NAME16",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA3_data.csv"
+            },
+            "key": "SA3_NAME16",
+            "fields": ["Population"]
+          }
+        },
+        {"calculate": "datum.Population/datum.properties.AREASQKM16", "as": "Population Density"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "darkgrey"},
+      "encoding": {
+        "color": {
+          "field": "Population Density",
+          "title": "People per sq. km",
+          "type": "quantitative",
+          "scale": 
+            { "type": "log",
+            "domain": [0.01, 0.1, 1, 10, 100, 1000, 10000],
+            "range": ["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#f03b20", "#bd0026"]
+          }
+        },
+        "tooltip": [
+          {"field": "properties.SA3_NAME16", "type": "nominal", "title": "LGA"},
+          {"field": "Population Density", "type": "quantitative","title": "People per sq. km", "format": ".2f"}
+        ]
+      }
+    }
+  ]
+  
+}

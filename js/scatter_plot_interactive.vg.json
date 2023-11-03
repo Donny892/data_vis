@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 400,
-  "height": 300,
   "title": "Population Density per Country",
+  "width": "container",
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/pop_density.csv",
     "format": {
@@ -15,16 +15,18 @@
   },
   "params": [
     {
-      "name": "Population_Above",
-      "value": 0,
-      "bind": {
-        "input": "range",
-        "min": 0,
-        "max": 100000000,
-        "step": 1000000,
-        "name": "Minimum Population: "
-      }
+      "name": "Population_Density_Above",
+      "value": 1,
+      "bind": {"input": "range", "min": 0, "max": 10000, "step": 10}
     }
+  ],
+  "selection": {
+    "continent_selection": {
+      "type": "multi", "fields": ["Continent"], "bind": "legend"
+    }
+  },
+  "transform":[
+    {"filter": "datum.Population_Density > Population_Density_Above"}
   ],
   "encoding": {
     "x": {
@@ -51,8 +53,8 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [1000000, 10000000, 50000000, 100000000, 1000000000],
-            "range": [50, 100, 200, 300, 500, 2000]
+            "domain": [1000000, 5000000, 10000000, 50000000, 100000000, 500000000, 1000000000],
+            "range": [20, 40, 75, 100, 250, 500, 1000, 2500]
           },
           "legend": {"format": ".1s"}
         },
@@ -69,16 +71,16 @@
               "Oceania"
             ],
             "range": [
-              "#e41a1c",
-              "#377eb8",
-              "#4daf4a",
-              "#984ea3",
-              "#ffff33",
-              "#a65628"
+              "#7fc97f",
+              "#beaed4",
+              "#fdc086",
+              "#ffff99",
+              "#386cb0",
+              "#f0027f"
             ]
           }
         },
-        "opacity": {"value": 0.75},
+        "opacity": {"value": 0.9},
         "tooltip": [
                     {
             "field": "Country Name",
@@ -117,7 +119,7 @@
         "color": {"value": "black"},
         "opacity": {
             "condition": {
-            "test": "datum['Country Name'] == 'Australia'",
+            "test": "datum['Country Name'] == 'Australia' || datum['Country Name'] == 'Mongolia' || datum['Country Name'] == 'Singapore'|| datum['Country Name'] == 'India'",
             "value": 1
           },
           "value": 0
@@ -142,7 +144,7 @@
             "field": "Population_Density",
             "title": "Population Density",
             "type": "quantitative",
-            "format": ".0f"
+            "format": ".1f"
           }
         ]
       }

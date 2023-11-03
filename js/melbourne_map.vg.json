@@ -1,56 +1,46 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Population Density of Australian Statistical Areas Level 2 (SA2)",
-  "width": 400,
-  "height": 300,
+  "title": "Population Density of Melbourne and Sorrounding Region",
+  "width": "container",
+  "height": 400,
   "projection": {
     "type": "conicEqualArea",
     "parallels": [0, 0],
-    "center": [134.296875, 27]
+    "center": [145, -37.75],
+    "scale": 35000
   },
-  "layer": [
+  "data": {
+    "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_2016_MEL.topojson",
+    "format": {"type": "topojson", "feature": "SA2_2016_MEL", "parse": {"properties.AREASQKM16": "number"}}
+  },
+  "transform": [
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_2016_MEL.topojson",
-        "format": {"type": "topojson", "feature": "SA2_2016_MEL", "parse": {"properties.AREASQKM16": "number"}}
-      },
-      "transform": [
-        {
-          "lookup": "properties.SA2_NAME16",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_data.csv"
-            },
-            "key": "SA2_NAME16",
-            "fields": ["Population"]
-          }
+      "lookup": "properties.SA2_NAME16",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/SA2_data.csv"
         },
-        {"calculate": "datum.Population/datum.properties.AREASQKM16", "as": "Population Density"}
-      ],
-      "mark": {"type": "geoshape", "stroke": null},
-      "encoding": {
-        "color": {
-          "field": "Population Density",
-          "type": "quantitative",
-          "scale": 
-            { "type": "log",
-            "domain": [0.1, 1, 10, 100, 1000, 10000],
-            "range": ["#ffffb2", "#fed976", "#feb24c", "#fd8d3c", "#f03b20", "#bd0026"]
-          }
-        },
-        "tooltip": [
-          {"field": "properties.SA2_NAME16", "type": "nominal", "title": "Statistical Area Level 2"},
-          {"field": "Population Density", "type": "quantitative", "format": ".2f"}
-        ]
+        "key": "SA2_NAME16",
+        "fields": ["Population"]
       }
     },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Donny892/data_vis/main/data/ne_10m_ocean.json",
-        "format": {"type": "topojson", "feature": "ne_10m_ocean"}
-      },
-      "mark": {"type": "geoshape", "fill": "skyblue"}
-    }
-  ]
-  
+    {"calculate": "datum.Population/datum.properties.AREASQKM16", "as": "Population Density"}
+  ],
+  "mark": {"type": "geoshape", "stroke": null},
+  "encoding": {
+    "color": {
+      "field": "Population Density",
+      "title": "People per sq. km",
+      "type": "quantitative",
+      "scale": 
+        { "type": "log",
+        "domain": [10, 100, 1000, 10000, 100000],
+        "range": ["#fd8d3c", "#f03b20", "#bd0026", "#800026"]
+      }
+    },
+    "tooltip": [
+      {"field": "properties.SA2_NAME16", "type": "nominal", "title": "Subrub"},
+      {"field": "Population Density", "type": "quantitative", "format": ".0f", "title": "People per sq. km"}
+    ]
+  }
 }
